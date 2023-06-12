@@ -56,5 +56,5 @@ function convertToAlphabeticGPA(numericGPA) {
 
 function displayGPA(gpa) {
     const resultField = document.getElementById('result');
-    resultField.textContent = "Result: " + gpa;
+    resultField.textContent = "Your GPA is " + gpa;
 }
