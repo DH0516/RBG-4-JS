@@ -4,4 +4,19 @@
         <title>GPA Calculator</title>
         <script type="text/javascript" src="miniproject1.js"></script>
     </head>
+    <body>
+        <h1>GPA Calculator</h1>
+        <p>
+        Only enter "A", "B", or "C" and separate each grade with a comma.<br>
+        Example: A,B,C,A,A,C,B
+        </p>
+    
+        <form id="myForm">
+            <input type="text" id="commaInput" pattern="^[A-Ca-c]+(?:,[A-Ca-c]+)*$">
+            <button type="submit" onclick="RunCalculate(event)">Submit</button>
+        </form>
+
+        <!-- Create a div to display the GPA -->
+        <div id="result"></div>
+    </body>
 </html>
